@@ -37,7 +37,7 @@
 
     .slider-sport {
         height: 70vh;
-        background: url('/assets/img/medio.jfif') rgba(0,0,0,0.3);
+        background: url('../../assets/img/medio.jfif') rgba(0,0,0,0.3);
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
@@ -164,7 +164,7 @@
     }
 
     .fundo {
-        background: url('/assets/img/medio.jpeg') rgba(0,0,0,0.1);
+        background: url('../../assets/img/medio.jpeg') rgba(0,0,0,0.1);
         height: 70vh;
     }
 
@@ -249,7 +249,7 @@
 @media screen and (max-width:805px){
 
     .fundo {
-        background: url('/assets/img/mobile.jpeg') rgba(0,0,0,0.1);
+        background: url('../../assets/img/mobile.jpeg') rgba(0,0,0,0.1);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -319,7 +319,7 @@
 
     .slider-sport {
         height: 75vh;
-        background: url('/assets/img/mobile.jfif') rgba(0,0,0,0.3);
+        background: url('../../assets/img/mobile.jfif') rgba(0,0,0,0.3);
         background-position: top center;
         background-repeat: no-repeat;
         background-size: cover;
