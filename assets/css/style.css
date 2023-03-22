@@ -143,7 +143,7 @@ input {
 }
 
 .fundo {
-    background: url('./assets/img/fundo1.jpeg') rgba(0,0,0,0.1);
+    background: url('/assets/img/fundo1.jfif') rgba(0,0,0,0.1);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
