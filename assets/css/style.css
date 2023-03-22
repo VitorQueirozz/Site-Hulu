@@ -1,0 +1,499 @@
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url('/assets/fonts/Poppins/Poppins-Regular.ttf');
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0b0c0f;
+    width: 100%;
+}
+
+.fade {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    background-color: #0b0c0fd7;
+    height: 100vh;
+    width: 100%;
+}
+
+.fade.ativo {
+    position: fixed;
+    z-index: 1;
+    opacity: 1;
+}
+
+.modal {
+    position: absolute;  
+    opacity: 0;
+    z-index: -1;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}
+
+.fade.ativo .modal {
+    position: fixed;
+    top: 50%;
+    opacity: 1;
+    z-index: 1;
+    background-color: #0b0c0fd7;
+}
+
+.icone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icone i {
+    font-size: 35px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.input-login {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.logar {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 400px;
+    border-radius: 5px;
+}
+
+.logar h1 {
+    font-weight: 900;
+    font-size: 25px;
+    padding: 50px 50px 0 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 50px;
+}
+
+label {
+    font-size: 14px;
+    color: rgb(114, 110, 110);
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    border: 2px solid rgb(146, 145, 145);
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    font-size: 17px;
+    outline: none;
+}
+
+.logar a {
+    text-decoration: none;
+    color: rgb(103, 103, 219);
+    font-size: 15px;
+}
+.logar button {
+    background-color: black;
+    color: white;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 17px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.recuperar-conta {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(146, 145, 145, 0.096);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: rgb(114, 110, 110);
+}
+
+.modal-login {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    z-index: -1;
+    display: none;
+}
+
+.span{
+    display: none;
+    color: red;
+}
+
+.fundo {
+    background: url('/assets/img/fundo1.jpeg') rgba(0,0,0,0.1);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    height: 70vh;
+    box-shadow: inset 10px 80px 40px rgba(0, 0, 0, 0.76);
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 74px;
+    padding: 0px 40px;
+}
+
+header .botao-mobile {
+    display: none;
+    font-size: 28px;
+    padding: 5px 8px;
+    color: rgb(223, 217, 217);
+    background-color: rgba(52, 67, 77, 0.911);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+header .botao-mobile:active {
+    transform: scale(1.1);
+}
+
+
+.logo {
+    width: 60px;
+}
+
+.login {
+    padding: 10px 15px; 
+    transition: 0.5s;
+}
+
+.login:hover {
+    background-color: rgba(52, 67, 77, 0.911);
+    color: rgb(223, 217, 217);
+    border-radius: 10px;
+}
+
+.conteudo-article {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(70vh - 74px);
+}
+
+.conteudo-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin: 60px 0;
+}
+
+.conteudo-btn p {
+    font-size: 13px;
+    font-weight: 500;
+    color: #00ed82;
+}
+
+.conteudo-btn h2 {
+    color: white;
+}
+
+.conteudo-btn .btn-get {
+    background-color: #1ce783;
+    border: none;
+    border-radius: 5px;
+    width: 670px;
+    height: 48px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.conteudo-btn .btn-get:hover {
+    background-color: #1ce781a8;
+}
+
+.conteudo-btn a {
+    color: rgb(238, 234, 234);
+    font-size: 15px;
+}
+
+/*
+.marcas-preco {
+    width: 100%;
+    height: 144px;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.445);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+*/
+
+.marcas-preco {
+    width: 100%;
+    height: 144px;
+    background-color: rgba(0, 0, 0, 0.445);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.marcas-preco .marcas-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.marcas-preco .marcas-btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.marcas-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.img-espn {
+    width: 355px;
+}
+
+.marcas-btn .btn {
+    height: 48px;
+    width: 180px;
+    border: 2px solid rgba(255, 255, 255, 0.788);
+    color: white;
+    font-weight: 800;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.marcas-btn .btn:hover  {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.788);
+    color: black;
+}
+
+.marcas-btn a {
+    color: rgb(223, 217, 217);
+    font-size: 12px;
+}
+
+.marcas-preco p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #00ed82;
+}
+
+.marcas-preco h2 {
+    font-weight: 500;
+    color: white;
+}
+
+
+.conteudo-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0b0c0f;
+}
+
+.conteudo-series {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.conteudo-series p {
+    font-size: 14px;
+    color: #00ed82;
+}
+
+.conteudo-series h1 {
+    font-size: 48px;
+    color: white;
+}
+
+.conteudo-series h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    width: 65%;
+    text-align: center;
+    line-height: 25px;
+}
+
+
+.conteudo-series-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: calc(100vh - 70vh);
+    padding-top: 88px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.conteudo-series-img {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 110px;
+}
+
+.img-serie {
+    width: 295px;
+    cursor: pointer;
+}
+
+.conteudo-info {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 50%;
+    text-align: center;
+}
+
+.conteudo-info p {
+    color: #00ed82;
+    font-size: 14px;
+}
+
+.conteudo-info h1 {
+    color: white;
+    font-size: 48px;
+}
+
+.conteudo-info h3 {
+    color: rgb(238, 234, 234);
+    font-weight: 500;
+    text-align: center;
+    font-size: 18px;
+}
+
+.conteudo-info .regulamento {
+    color:rgb(146, 145, 145);
+    font-size: 10px;
+    text-align: center;
+}
+
+.conteudo-info a {
+    color: rgb(238, 234, 234);
+}
+
+.conteudo-info i {
+    color: white;
+    font-weight: 100;
+    font-size: 40px;
+}
+
+.slider-sport {
+    width: 100%;
+    height: 90vh;
+    background: url('/assets/img/sports.jfif') rgba(0,0,0,0.3);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    margin-bottom: 100px;
+}
+
+.sport-geral {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: ce;
+    gap: 30px;
+    width: 580px;
+    height: 90vh;
+    margin: 0 208px;
+}
+
+.opcao-slider {
+    display: flex;
+    gap: 30px;
+}
+
+.opcao-slider button {
+    border: none;
+    background-color: transparent;
+    color: rgb(146, 145, 145);
+    font-weight: 700;
+}
+
+.sports{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sports h1 {
+    color: rgb(238, 234, 234);
+    font-size: 48px;
+}
+
+.sports p {
+    color: rgb(238, 234, 234);
+    font-size: 18px;
+}
+
+.sports .regulament {
+    font-size: 10px;
+    color: rgb(146, 145, 145);
+}
+
+.sports .regulament a {
+    color: rgb(146, 145, 145);
+}
+
+.sport-icone {
+    display: flex;
+    gap: 25px;
+}
+
+.img-sport {
+    width: 50px;
+    height: 30px;
+    padding: 3px;
+}
+
+.fundo-img{
+    display: flex;
+    align-items: center;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    height: 50px;
+    cursor: pointer;
+}

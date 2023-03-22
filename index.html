@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hulu</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/responsivo.css">
+    <link rel="shortcut icon" href="assets/img/icones/favicon.ico.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+    <div class="fade">
+        <div class="modal">
+            <div class="logar">
+                <div class="input-login">
+                    <div class="icone">
+                        <h1>Log In</h1>
+                        <i class='bx bx-x' id="close-form"></i>
+                    </div>
+                    <form class="form" id="formulario">
+                        <div>
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" class="inputs required" id="email" oninput="validarEmail()">
+                            <label for="" class="span" id="label-email">Digite um email válido</label>
+                        </div>
+                        <div>
+                            <label for="senha">PASSWORD</label>
+                            <input type="password" name="senha" class="inputs required" id="senha" autocomplete="off" oninput="validarSenha()">
+                            <label for="" class="span" id="label-senha">Senha deve ter no mínimo 8 caracteres</label>
+                        </div>
+                        <p><a href="#">Forgot your email or password?</a></p>
+                        <button type="submit" class="btn-form">LOG IN</button>
+                    </form>
+                </div>
+                <div class="recuperar-conta">
+                    <p>Don't have an account? <a href="#">Start your free trial</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-login">
+        <div class="pop-login">
+            <button class="login-btn-modal">LOG IN</button>
+            <a href="#">GET ALL THREE</a>
+        </div>
+    </div>
+    
+    <div class="fundo">
+        <header>
+            <img src="assets/img/logo.png" alt="" class="logo">
+            <a href="#" class="login">LOG IN</a>
+            <i class='bx bx-menu botao-mobile'></i>
+        </header>
+        
+        <article class="conteudo-article">
+            <div class="conteudo-btn">
+                <p>DISNEY BUNDLE DUO BASIC</p>
+                <img src="assets/img/original (1).png" alt="">
+                <h2>Get Hulu & Disney+, both with ads, for $9.99/month.</h2>
+                <button class="btn-get">GET THEM BOTH</button>
+                <a href="#">Terms apply</a>
+                <a href="#">Sign up for Hulu only</a>
+            </div>
+            <div class="marcas-preco">
+                <img src="assets/img/original.png" alt="" class="img-espn">
+                <div class="marcas-texto">
+                    <p>DISNEY BUNDLE TRIO BASIC</p>
+                    <h2>Get Hulu & Disney+, and ESPN+,all with ads, for $12.99/month.</h2>
+                </div>
+                <div class="marcas-btn">
+                    <button class="btn">GET ALL THREE</button>
+                    <a href="#">Terms apply</a>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <main class="conteudo-main">
+        <div class="conteudo-series">
+            <div class="conteudo-series-texto">
+                <p>INCLUED IN ALL PLANS</p>
+                <h1>All The TV You Love</h1>
+                <h3>Watch full seasons of exclusively streaming series, current-season episodes, hit movies, Hulu Originals, kids shows, and more.</h3>
+            </div>
+            <div class="conteudo-series-img">
+                <img src="assets/img/original.jfif" alt="" class="img-serie">
+                <img src="assets/img/original (1).jfif" alt="" class="img-serie">
+                <img src="assets/img/original (2).jfif" alt="" class="img-serie">
+                <img src="assets/img/original (3).jfif" alt="" class="img-serie">
+            </div>
+        </div>
+
+        <div class="conteudo-info">
+            <p>HULU + LIVE TV, NOW WITH DISNEY+ AND ESPN+, ALL WITH ADS</p>
+            <h1>Live TV Makes It Better</h1>
+            <h3>Make the switch from cable. Get 85+ top channels on Hulu (With Ads) + Live TV with your favorite live sports, news, and events - plus the entire Hulu streaming library. With Unlimited DVR, store Live TV recordings for up to nine months and fast-forward through your DVR content. Access endless entertainment with Disney+ and live sports with ESPN+. </h3>
+            <p class="regulamento">Regional restrictions, blackouts and Live TV terms apply. Access content from each service separately. Location data required to watch certain content. Unlimited DVR recording is not available for on-demand shows.</p>
+            <a href="#">VIEW CHANNELS IN YOUR AREA →</a>
+            <i class='bx bx-chevron-down'></i>
+        </div>
+    </main>
+
+    <div class="slider-sport">
+
+        <div class="sport-geral">
+            <div class="opcao-slider">
+                <button>LIVE SPORTS</button>
+                <button>BREAKING NEWS</button>
+                <button>BIGGEST EVENTS</button>
+            </div>
+            <div class="sports">
+                <h1>Live Sports</h1>
+                <p>Catch your games at home or on the go. Stream live games from major college and pro leagues including the NCAA®, NBA, NHL, NFL, and more.</p>
+                <div class="sport-icone">
+                    <div class="fundo-img">
+                        <img src="assets/img/icones/icone1.png" alt="" class="img-sport">
+                    </div>
+                    <div class="fundo-img">
+                        <img src="assets/img/icones/icone2.png" alt="" class="img-sport">
+                    </div>
+                    <div class="fundo-img">
+                        <img src="assets/img/icones/icone3.png" alt="" class="img-sport">
+                    </div>
+                    <div class="fundo-img">
+                        <img src="assets/img/icones/icone4.png" alt="" class="img-sport">
+                    </div>
+                </div>
+                <p class="regulament">Live TV plan required. Regional restrictions, blackouts and additional terms apply. <a href="#">See details</a></p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/verificar.js"></script>
+</body>
+</html>
